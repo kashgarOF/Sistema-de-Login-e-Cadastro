@@ -47,3 +47,27 @@ h1 {
     height: 30px;
     width: 400px;
 }
+
+
+/*-------------------- css do login-----------------------*/
+
+#bloco-login {
+    background: rgba(241, 241, 238, 0.70);
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border-style: none;
+    padding: 20px;
+}
+
+#bloco-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
