@@ -11,43 +11,6 @@ body {
     margin: auto;
 }
 
-h1 {
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    text-align: center;
-}
-
-#list {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-#list > ul > li {
-    padding: 3px;
-}
-
-#formulario {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-#formulario > div {
-    padding: 10px;
-}
-
-#formulario > div > input {
-    border: none;
-    outline: none;
-    height: 30px;
-    width: 400px;
-}
-
 
 /*-------------------- css do login-----------------------*/
 
@@ -62,6 +25,8 @@ h1 {
     border-radius: 5px;
     border-style: none;
     padding: 20px;
+    font-size: 20px;
+    
 }
 
 #bloco-login {
@@ -70,4 +35,88 @@ h1 {
     align-items: center;
     flex-direction: column;
     
+}
+
+#h2-login {
+    position: relative;
+    top: -30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+input {
+    height: 25px;
+    width: 300px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #4cafef;
+    box-shadow: 0 0 5px #4cafef;
+}
+
+label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
+
+#enviar {
+    display: block;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    background-color: rgba(110, 151, 93, 0.562);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+#enviar:focus {
+    border: 1px solid #4cafef;
+    box-shadow: 0 0 5px #4cafef;
+}
+
+#bt-esqueci {
+    border: none;
+    background: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px #23c466;
+
+} 
+
+#bt-esqueci:focus {
+    text-shadow: 2px 2px 2px #4cafef;
+}
+
+#div-sub {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#bt-sub {
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px #23c466;
+}
+
+#bt-sub:focus {
+    text-shadow: 2px 2px 1px #4cafef;
 }
