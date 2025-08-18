@@ -11,17 +11,22 @@
 <body>
     <section id="container-curriculo" class="container-curriculo">
         <form action="#" id="bloco-curriculo" class="bloco-curriculo" method="post" novalidate>
-            <h2>Meu currículo</h2>
+            <h2 id="h2-curriculo">Meu currículo</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aperiam, fugiat velit iusto dolore
                 necessitatibus saepe iure asperiores quas modi similique rem commodi corporis exercitationem nobis neque
                 ipsa blanditiis? Provident.</p>
 
-            <h3>Experiência</h3>
-            <h4>Experiência academica</h4>
-            <p>elit. Recusandae omnis tempore architecto facilis quod ullam. Corrupti volup</p>
+            <h3 id="h3-curriculo">Experiência</h3>
+            
+            <div class="campo-curriculo">
+                <h4>Experiência academica</h4>
+                <p>elit. Recusandae omnis tempore architecto facilis quod ullam. Corrupti volup</p>
+            </div>
+
+                            <p>Experiência academica 1</p>
 
             <div class="exp-academica">
-                <p>Experiência academica 1</p>
+                
                 <div id="exp-formacao" class="exp-formacao">
                     <label for="input-formacao" id="label-formacao">Formação*</label>
                     <select name="select_formacao" id="select-formacao" required>
@@ -66,24 +71,25 @@
                         placeholder="sua faculdade/escola"
                         required>
                 </div>
-                <div id="campo-inicio" class="campo-inicio">
-                    <label for="select-mes" id="label-inicio">Inicio*</label>
-                    <select name="select_mes" id="select-mes">
-                        <option value="">Mês...</option>
-                        <option value="01">Janeiro</option>
-                        <option value="02">Fevereiro</option>
-                        <option value="03">Março</option>
-                        <option value="04">Abril</option>
-                        <option value="05">Maio</option>
-                        <option value="06">Junho</option>
-                        <option value="07">Julho</option>
-                        <option value="08">Agosto</option>
-                        <option value="09">Setembro</option>
-                        <option value="10">Outubro</option>
-                        <option value="11">Novembro</option>
-                        <option value="12">Dezembro</option>
-                    </select>
-                    <select name="select_ano" id="select-ano-fim">
+                <div id="select-div">
+                    <div id="campo-inicio" class="campo-inicio">
+                        <label for="select-mes" id="label-inicio">Inicio*</label>
+                        <select name="select_mes" id="select-mes">
+                            <option value="">Mês...</option>
+                            <option value="01">Janeiro</option>
+                            <option value="02">Fevereiro</option>
+                            <option value="03">Março</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Maio</option>
+                            <option value="06">Junho</option>
+                            <option value="07">Julho</option>
+                            <option value="08">Agosto</option>
+                            <option value="09">Setembro</option>
+                            <option value="10">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
+                        </select>
+                        <select name="select_ano" id="select-ano-fim">
                             <option value="2000">2000</option>
                             <option value="2001">2001</option>
                             <option value="2002">2002</option>
@@ -113,59 +119,62 @@
                             <option value="2026">2026</option>
                             <option value="2027">2027</option>
                             <option value="2028">2028</option>
-                            <option value="2029">2029</option>                 
-                    </select>
-                </div>
-                <div id="campo-fim" class="campo-fim">
-                    <label for="select-ano" id="label-ano">Fim*</label>
-                    <select name="select_mes" id="select-mes">
-                        <option value="">Mês...</option>
-                        <option value="01">Janeiro</option>
-                        <option value="02">Fevereiro</option>
-                        <option value="03">Março</option>
-                        <option value="04">Abril</option>
-                        <option value="05">Maio</option>
-                        <option value="06">Junho</option>
-                        <option value="07">Julho</option>
-                        <option value="08">Agosto</option>
-                        <option value="09">Setembro</option>
-                        <option value="10">Outubro</option>
-                        <option value="11">Novembro</option>
-                        <option value="12">Dezembro</option>
-                    </select>
+                            <option value="2029">2029</option>
+                        </select>
+                    </div>
+                    <div id="campo-fim" class="campo-fim">
+                        <label for="select-ano" id="label-ano">Fim*</label>
+                        <select name="select_mes" id="select-mes">
+                            <option value="">Mês...</option>
+                            <option value="01">Janeiro</option>
+                            <option value="02">Fevereiro</option>
+                            <option value="03">Março</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Maio</option>
+                            <option value="06">Junho</option>
+                            <option value="07">Julho</option>
+                            <option value="08">Agosto</option>
+                            <option value="09">Setembro</option>
+                            <option value="10">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
+                        </select>
                 
-                    <select name="select_ano" id="select-ano-inicio">
-                        <option value="2000">2000</option>
-                        <option value="2001">2001</option>
-                        <option value="2002">2002</option>
-                        <option value="2003">2003</option>
-                        <option value="2004">2004</option>
-                        <option value="2005">2005</option>
-                        <option value="2006">2006</option>
-                        <option value="2007">2007</option>
-                        <option value="2008">2008</option>
-                        <option value="2009">2009</option>
-                        <option value="2010">2010</option>
-                        <option value="2011">2011</option>
-                        <option value="2012">2012</option>
-                        <option value="2013">2013</option>
-                        <option value="2014">2014</option>
-                        <option value="2015">2015</option>
-                        <option value="2016">2016</option>
-                        <option value="2017">2017</option>
-                        <option value="2018">2018</option>
-                        <option value="2019">2019</option>
-                        <option value="2020">2020</option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="2027">2027</option>
-                        <option value="2028">2028</option>
-                        <option value="2029">2029</option>
-                    </select>
+                        <select name="select_ano" id="select-ano-inicio">
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                        </select>
+                
+                    </div>
+                
                 
                 </div>
             </div>
