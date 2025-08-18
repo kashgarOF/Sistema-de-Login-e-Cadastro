@@ -1,2 +1,8 @@
-#container-recuperar .card{ width:min(480px, 92vw); }
-.campo-recuperar{ display:grid; gap:6px; }
+#container-recuperar .card {
+    width: min(480px, 92vw);
+}
+
+.campo-recuperar {
+    display: grid;
+    gap: 6px;
+}

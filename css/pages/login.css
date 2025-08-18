@@ -1,1 +1,3 @@
-.container-login .card{ width:min(420px, 92vw); }
+.container-login .card {
+    width: min(420px, 92vw);
+}
