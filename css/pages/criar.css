@@ -1,0 +1,4 @@
+#container-criar .card{ width:min(480px, 92vw); }
+.campo-criar{ display:grid; gap:6px; }
+.terms{ display:flex; align-items:center; gap:6px; flex-wrap:wrap; font-size:14px; color:var(--muted); }
+.ja-tem-conta{ display:flex; gap:8px; align-items:center; justify-content:center; }

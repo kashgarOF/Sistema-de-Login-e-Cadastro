@@ -1,0 +1,10 @@
+.container-curriculo .card{ width:min(720px, 92vw); }
+.exp-academica{ display:grid; grid-template-columns: 1fr 1fr; gap:20px; align-items:start; }
+.exp-formacao, .exp-grau, .exp-status, #curso, #instituicao{
+  display:flex; align-items:center; gap:8px;
+}
+#mes-inicio, #ano-inicio, #mes-fim, #ano-fim{
+  width:120px; height:40px; font-size:15px; text-align:center;
+}
+#campo-inicio, #campo-fim{ display:flex; align-items:center; gap:8px; }
+#select-div{ display:grid; grid-template-columns: 1fr 1fr; gap:20px; }
