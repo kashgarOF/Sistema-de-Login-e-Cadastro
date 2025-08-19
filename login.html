@@ -11,9 +11,9 @@
 <body>
   <section id="container-login" class="card">
     <form id="bloco-login" class="form" action="#" method="post" novalidate>
-      <h2 id="h2-login">Fazer login</h2>
+      <h2 class="h2">Fazer login</h2>
 
-      <div  class="field">
+      <div class="field">
         <label for="input-usuario" id="label-usuario">Email/usuário</label>
         <input
           type="email"
@@ -21,11 +21,10 @@
           name="email_usuario"
           placeholder="seuemail@exemplo.com"
           autocomplete="username"
-          required
-        />
+          required/>
       </div>
 
-      <div  class="field">
+      <div class="field">
         <label for="input-senha" id="label-senha">Senha</label>
         <input
           type="password"
@@ -33,18 +32,18 @@
           name="senha"
           placeholder="••••••••"
           autocomplete="current-password"
-          required
-        />
+          required/>
       </div>
 
-      <div class="acoes">
-        <button type="submit" id="enviar">Fazer login</button>
-        <button type="button" id="bt-esqueci">Esqueci a senha</button>
+      <div class="field">
+        <button type="submit" id="enviar" class="btn-primary">Fazer login</button>
+        <button type="button" id="bt-sub" class="btn-primary">Criar conta</button>
+      
       </div>
-
-      <div id="div-sub" class="sub">
+      
+      <div id="div-sub" class="field">
         <p>Não tem conta ainda?</p>
-        <button type="button" id="bt-sub">Criar conta</button>
+        <button type="button" id="bt-esqueci" class="btn-link">Esqueci a senha</button>
       </div>
     </form>
   </section>
