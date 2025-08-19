@@ -97,6 +97,8 @@
   font-size: 18px;
   font-weight: 600;
   color: #222;
+  justify-self: start;     
+  width: max-content;
 }
 
 .field input {

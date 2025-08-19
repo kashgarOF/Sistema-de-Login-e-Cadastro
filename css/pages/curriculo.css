@@ -1,44 +1,27 @@
-.container-curriculo .card {
-  width: min(720px, 92vw);
+#container-curriculo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: auto;
 }
 
-.exp-academica {
+#exp-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
-  align-items: start;
+  padding: 0 10px;
 }
 
-.exp-formacao,
-.exp-grau,
-.exp-status,
-#curso,
-#instituicao {
+#campo-inicio, #campo-fim {
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: space-between;
 }
 
-#mes-inicio,
-#ano-inicio,
-#mes-fim,
-#ano-fim {
-  width: 120px;
-  height: 40px;
-  font-size: 15px;
-  text-align: center;
-}
-
-#campo-inicio,
-#campo-fim {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-#select-div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+#campo-inicio label, #campo-fim label {
+  width: 50px;
 }
 
