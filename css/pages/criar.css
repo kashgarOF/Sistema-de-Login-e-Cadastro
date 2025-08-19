@@ -1,24 +1,26 @@
-#container-criar .card {
-    width: min(480px, 92vw);
-}
-
-.campo-criar {
+#ja-tem-conta {
     display: grid;
-    gap: 6px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    width: max-content;
 }
 
 .terms {
     display: flex;
-    align-items: center;
-    gap: 6px;
-    flex-wrap: wrap;
-    font-size: 14px;
-    color: var(--muted);
+    justify-content: space-between;
+    font-size: 18px;
+    align-items: center
 }
 
-.ja-tem-conta {
+.termsAndCheck {
     display: flex;
-    gap: 8px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+#termos-check {
+    width: 20px;
+    height: 20px;
+    border: none;
 }
