@@ -362,7 +362,7 @@
                     accept=".pdf, .jpg, .jpeg, .png">
                 </div>
             </div>
-            <button type="submit" class="btn-primary">Salvar e enviar</button>
+            <button type="submit" class="btn-primary">Salvar e continuar</button>
         </form>
     </section>
 
@@ -373,7 +373,7 @@
         <h2 class="h2">Dados pessoais</h2>
 
         <h3 class="h3-prof genero-h3">Genero</h3>
-        <div id="genero" class="field">
+        <div id="genero" class="field radio">
             <label for=""><input type="radio" name="genero" value="masculino">
                 Masculino
             </label>
@@ -390,8 +390,201 @@
                 Prefiro não respoder
             </label>
         </div>
+                <h3 class="h3-prof genero-h3">Deficiência</h3>
+        <div id="deficiencia" class="field radio">
+            <label for=""><input type="radio" name="deficiencia" value="sim">
+                Sim
+            </label>
+            <label for=""><input type="radio" name="deficiencia" value="nao">
+                Não
+            </label>
+        </div>
+        <div id="endereco" class="field">
+            <h3 class="h3-prof genero-h3">Endereço</h3>
+            <p>Lembre-se, este endereço será utilizado em todas as suas inscrições</p>
+            <div id="radio-endereco" class="radio field">
+                <p>Você mora no brasil?</p>
+                <label for=""><input type="radio" name="radio_endereco" value="sim">
+                    Sim
+                </label>
+                <label for=""><input type="radio" name="radio_endereco" value="nao">
+                    Não
+                </label>
+            </div>
+            <div id="campo-input-endereco" class="field">
+                <div id="cep" class="field">
+                    <label for="input-cep">CEP (código postal)</label>
+                    <input type="text" 
+                    id="input-cep" 
+                    name="cep" 
+                    placeholder="00000-000" 
+                    maxlength="9" 
+                    required>
+                </div>
+                <div id="rua" class="field">
+                    <label for="rua">Endereço</label>
+                    <input type="text" 
+                    id="rua" 
+                    placeholder="ex.: Rua parana, 10" 
+                    required>
+                </div>
+                <div id="div-estados" class="field">
+                    <label for="estados">Estado*</label>
+                    <select name="estados" id="estados">
+                        <option value="">...</option>
+                        <option value="AC">Acre (AC)</option>
+                        <option value="AL">Alagoas (AL)</option>
+                        <option value="AP">Amapá (AP)</option>
+                        <option value="AM">Amazonas (AM)</option>
+                        <option value="BA">Bahia (BA)</option>
+                        <option value="CE">Ceará (CE)</option>
+                        <option value="DF">Distrito Federal (DF)</option>
+                        <option value="ES">Espírito Santo (ES)</option>
+                        <option value="GO">Goiás (GO)</option>
+                        <option value="MA">Maranhão (MA)</option>
+                        <option value="MT">Mato Grosso (MT)</option>
+                        <option value="MS">Mato Grosso do Sul (MS)</option>
+                        <option value="MG">Minas Gerais (MG)</option>
+                        <option value="PA">Pará (PA)</option>
+                        <option value="PB">Paraíba (PB)</option>
+                        <option value="PR">Paraná (PR)</option>
+                        <option value="PE">Pernambuco (PE)</option>
+                        <option value="PI">Piauí (PI)</option>
+                        <option value="RJ">Rio de Janeiro (RJ)</option>
+                        <option value="RN">Rio Grande do Norte (RN)</option>
+                        <option value="RS">Rio Grande do Sul (RS)</option>
+                        <option value="RO">Rondônia (RO)</option>
+                        <option value="RR">Roraima (RR)</option>
+                        <option value="SC">Santa Catarina (SC)</option>
+                        <option value="SP">São Paulo (SP)</option>
+                        <option value="SE">Sergipe (SE)</option>
+                        <option value="TO">Tocantins (TO)</option>
+                    </select>
+                </div>
+                <div id="div-cidades" class="field">
+                    <label for="cidades">Cidades*</label>
+                    <select name="cidades" id="cidades">
+                        <option value="">...</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="perfil-linkedln" class="field">
+            <label for="linkedln">Link(URL) do seu perfil (opcional)</label>
+            <input type="text" id="linkedln">
+        </div>
+        <button id="salvar-continuar-dadosP" class="btn-primary">Salvar e continuar</button>
     </form>
 </SECtion>
+
+<!-------------------------------DIVERSIDADE---------------------------------->
+
+<section id="container-diversidade" class="card">
+    <form action="#" id="bloco-diversidade" class="form" method="post" novalidate>
+        <h2 class="h2">Diversidade</h2>
+        <p class="paragrafo">O preenchimento desta secão é opicional.</p>
+
+        <div id="radio-diversidade" class="field">
+            <div id="pronome" class="field radio">
+                <p>Qual o pronome adequado para você?</p>
+                <label for="ele">
+                    <input type="radio" id="ele" name="ele" value="ele">
+                    Ele/Dele
+                </label>
+                <label for="ela">
+                    <input type="radio" id="ela" name="ela" value="ela">
+                    Ela/Dela
+                </label>
+                <label for="pronome-nao">
+                    <input type="radio" name="pronome_nao" id="pronome_nao" value="pronome-nao">
+                    Prefiro não respoder
+                </label>
+            </div>
+            <div id="indentidade-g" class="field radio">
+                <p>Qual sua indentidade de genero?</p>
+                <label for="ind-cis">
+                    <input type="radio" id="ind-cis" name="ind_genero" value="cis">
+                    Cisgênero
+                </label>
+                <label for="ind-trans">
+                    <input type="radio" id="ind-trans" name="ind_genero" value="trans">
+                    Transgênero
+                </label>
+                <label for="ind-pf-não">
+                    <input type="radio" name="ind_nao" id="ind-pf-não" value="ind-nao">
+                    Prefiro não respoder
+                </label>
+            </div>
+            <div id="orientacao" class="field radio">
+                <p>Qual a sua orientação sexual?</p>
+                <label for="assexual">
+                    <input type="radio" id="assexual" name="assexual" value="assexual">
+                    Assexual
+                </label>
+                <label for="bi">
+                    <input type="radio" id="bi" name="bi" value="bi">
+                    Bissexual
+                </label>
+                <label for="hetero">
+                    <input type="radio" id="hetero" name="hetero" value="hetero">
+                    Hetereossexual
+                </label>
+                <label for="homo">
+                    <input type="radio" id="homo" name="homo" value="homo">
+                    Homossexual
+                </label>
+                <label for="pan">
+                    <input type="radio" id="pan" name="pan" value="pan">
+                    Panssexual
+                </label>
+                <label for="orientacao-nao">
+                    <input type="radio" id="orientacao-nao" name="orientacao-nao" value="orientacao-nao">
+                    Prefiro não responder
+                </label>
+            </div>
+            <div id="cor-raca" class="field radio">
+                <p>Qual sua cor ou raça ?</p>
+                <label for="amarela">
+                    <input type="radio" id="amarela" name="amarela" value="amarela">
+                    amarela
+                </label>
+                <label for="branca">
+                    <input type="radio" id="branca" name="branca" value="branca">
+                    branca
+                </label>
+                <label for="indigina">
+                    <input type="radio" id="indigina" name="indigina" value="indigina">
+                    indigina
+                </label>
+                <label for="parda">
+                    <input type="radio" id="parda" name="parda" value="parda">
+                    parda
+                </label>
+                <label for="preta">
+                    <input type="radio" id="preta" name="preta" value="preta">
+                    preta
+                </label>
+                <label for="cor-nao">
+                    <input type="radio" id="cor-nao" name="cor-nao" value="cor-nao">
+                    Prefiro não responder
+                </label>
+            </div>
+        </div>
+        <div id="concetimento-inf" class="field">
+            <h3 class="h3-prof genero-h3">Consentimento de compartilhamento de informações</h3>
+            <div id="check-concentimento" class="field">
+                <input type="checkbox" 
+                id="check-eu-concordo"
+                required>
+                <p>eu concordo em compartilhar....</p>
+                <a href="#" target="_blank" rel="noopener">aviso de privacidade</a>
+            </div>
+        </div>
+        <button type="submit" class="btn-primary" id="salvar-final" disabled>
+            Salvar
+        </button>
+    </form>
+</section>
 
 </body>
 

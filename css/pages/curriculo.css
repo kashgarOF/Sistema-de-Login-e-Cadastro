@@ -93,12 +93,67 @@
   margin: 0;
 }
 
-#genero {
+.radio {
   display: flex;
   justify-content: start;
   align-items: center;
 }
-#genero input {
+.radio input {
   width: 20px;
   height: 20px;
+}
+
+#endereco {
+  display: grid;
+ 
+}
+
+#campo-input-endereco {
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 20px;
+}
+
+/*-------------------------------DIVERSIDADE-------------------------------*/
+
+#container-diversidade {
+  display: grid;
+  width: 90%;
+}
+
+.paragrafo {
+  background-color: #6be07f;
+  color: rgb(55, 117, 233);
+  text-align: center;
+  width: 100%;
+  border: 3px solid #6bdce0;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+#radio-diversidade {
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+#radio-diversidade div {
+  display: flex;
+  flex-direction: column;
+}
+
+#concentimento-inf {
+  display: flex;
+  justify-content: start;
+}
+
+#check-concentimento {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+#check-eu-concordo {
+  width: 15px;
+  height: 15px;
 }
