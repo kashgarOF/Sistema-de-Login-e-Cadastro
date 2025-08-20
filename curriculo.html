@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <section id="container-curriculo" class="card">
+    <section id="container-exp" class="card">
         <form action="#" id="bloco-curriculo" class="form" method="post" novalidate>
             <h2 class="h2">Meu currículo</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aperiam, fugiat velit iusto dolore
@@ -174,7 +174,7 @@
             </div>
 <!-------------------------------EXPERIÊNCIA PROFISSIONAL----------------------------->
             
-                <div id="h3-prof" class="exp-prof-h3">
+                <div class="h3-prof exp-prof-h3">
                     <h3 class="h2">Experiência profissional</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, voluptate. Nisi assumenda, excepturi quibusdam
                         sint necessitatibus harum e</p>
@@ -308,11 +308,90 @@
                 </div>
                 <div id="prof-descricao" class="field">
                     <label for="prof-descricao">Descrição das atividades</label>
-                    <textarea name="descricao_atv" id="textarea-atv"></textarea>
+                    <textarea name="descricao_atv" class="textarea-des"></textarea>
                 </div>    
             </div>
+
+<!-------------------------------IDIOMAS----------------------------->
+            <div class="h3-prof">
+                <h3 class="h2">Idiomas</h3>
+                <p>Selcione todos os idiomas eu você tem domínio.</p>
+            </div> 
+            <div id="idiomas" class="field">
+                <div class="field">
+                    <label for="select-idiomas">Idiomas*</label>
+                    <select name="idiomas" id="select-idiomas">
+                        <option value="selecione-idioma">...</option>
+                        <option value="porgues">Português</option>
+                        <option value="ingles">Inglês</option>
+                        <option value="espanhol">Espanhol</option>
+                        <option value="frances">Frances</option>
+                        <option value="italiano">Italiano</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="nivel-idiomas">Nivel*</label>
+                    <select name="nivel_idiomas" id="nivel-idiomas">
+                        <option value="selecione-nivel">...</option>
+                        <option value="selecione-nivel">Basico</option>
+                        <option value="selecione-nivel">intermediario</option>
+                        <option value="selecione-nivel">Fluente</option>
+                        <option value="selecione-nivel">Nativo</option>
+                    </select>
+                </div>
+            </div>
+<!-------------------------------CERTIFICADOS----------------------------->
+            <div class="h3-prof">
+                <h3 class="h2">Certificados</h3>
+                <p>Você pode informar sobre cursos</p>
+            </div>
+            <div id="certificado" class="field">
+                <div id="titulo">
+                    <label for="titulo-certificado">Titulo*</label>
+                    <input type="text" id="titulo-certificado">
+                </div>
+                <div class="descricao-certificado">
+                    <label for="txt-titulo-certificado">Descrição*</label>
+                    <textarea name="descricao-certificado" class="textarea-des"></textarea>
+                </div>
+                <div id="up-certificado" class="field">
+                    <label for="certificado-arq">Envie seu certificado(.pdf/jpg/png)</label>
+                    <input type="file"
+                    id="certificado-arq" 
+                    name="certificado_arq" 
+                    accept=".pdf, .jpg, .jpeg, .png">
+                </div>
+            </div>
+            <button type="submit" class="btn-primary">Salvar e enviar</button>
         </form>
     </section>
+
+<!-------------------------------DADOS PESSOAIS----------------------------->
+
+<SECtion id="container-dadosP" class="card">
+    <form action="#" id="bloco-dadosP" class="form" method="post" novalidate>
+        <h2 class="h2">Dados pessoais</h2>
+
+        <h3 class="h3-prof genero-h3">Genero</h3>
+        <div id="genero" class="field">
+            <label for=""><input type="radio" name="genero" value="masculino">
+                Masculino
+            </label>
+            <label for=""><input type="radio" name="genero" value="feminino">
+                Feminino
+            </label>
+            <label for=""><input type="radio" name="genero" value="nao-biniario">
+                Não-binario
+            </label>
+            <label for=""><input type="radio" name="genero" value="outros">
+                Outros
+            </label>
+            <label for=""><input type="radio" name="genero" value="nao-respoder">
+                Prefiro não respoder
+            </label>
+        </div>
+    </form>
+</SECtion>
 
 </body>
 

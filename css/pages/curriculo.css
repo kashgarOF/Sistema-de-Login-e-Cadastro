@@ -1,4 +1,4 @@
-#container-curriculo {
+#container-exp {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,7 +26,7 @@
 }
 
 /*-------------------------EXPERIÊNCIA PROFISSIONAL--------------------------------*/
-#h3-prof {
+.h3-prof {
   padding: 50px 0 0 0;
 }
 
@@ -52,14 +52,53 @@
   cursor: pointer;
 }
 
-#textarea-atv {
-  width: 100%;
-  height: 150px;
-  border: none;
-  border-radius: 6px;
-  outline: none;
+
+/*------------------------------IDIOMAS--------------------------------*/
+
+#idiomas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-#textarea-atv:focus {
-  box-shadow: 0 0 0 4px rgba(76, 175, 239, 0.25);
+#idiomas select {
+  width: 100%;
+}
+
+/*------------------------------Certificados------------------------------*/
+
+#certificado {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#certificado-arq {
+  width: max-content;
+  background: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/*------------------------------DADOS PESSOAIS------------------------------*/
+
+#container-dadosP {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+}
+
+.genero-h3 {
+  margin: 0;
+}
+
+#genero {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#genero input {
+  width: 20px;
+  height: 20px;
 }
