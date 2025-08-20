@@ -22,6 +22,7 @@
           placeholder="seuemail@exemplo.com"
           autocomplete="username"
           required/>
+          <span class="error-msg">preencha o campo</span>
       </div>
 
       <div class="field">
@@ -32,7 +33,9 @@
           name="senha"
           placeholder="••••••••"
           autocomplete="current-password"
-          required/>
+          required
+          minlength="6"/>
+          <span class="error-msg">preencha o campo</span>
       </div>
 
       <div class="field">

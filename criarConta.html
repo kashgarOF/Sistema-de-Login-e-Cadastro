@@ -23,6 +23,7 @@
                 placeholder="ex.:Joarez da silva"
                 autocomplete="name" 
                 required>
+                <span class="error-msg">preencha o campo</span>
             </div>
 
             <div class="field">
@@ -33,6 +34,7 @@
                 placeholder="seuemail@exemplo.com"
                 autocomplete="username" 
                 required>
+                <span class="error-msg">preencha o campo</span>
             </div>
 
             <div class="field">
@@ -40,8 +42,10 @@
                 <input type="password" 
                 id="input-criar-senha" 
                 name="senha" 
-                autocomplete="new-password" 
+                autocomplete="new-password"
+                minlength="6" 
                 required>
+                <span class="error-msg">A senha deve ter pelo menos 6 caracteres</span>
             </div>
 
             <div class="field">
@@ -51,9 +55,10 @@
                 name="senha_confirme" 
                 autocomplete="new-password"
                 required>
+                <span class="error-msg">As senhas devem ser iguais</span>
             </div>         
             <div class="terms">                
-                    <label for="termos">Li e aceito os</label>
+                    <label for="termos-check">Li e aceito os</label>
                 <div class="termsAndCheck">                  
                     <a href="#" target="_blank" rel="noopener">Termos de uso</a>
                     <input type="checkbox" 
@@ -61,7 +66,7 @@
                     required>
                 </div>
             </div>
-
+                <span class="error-msg">Aceite os termos e condições para prosseguir</span>
                 <button type="submit" class="btn-primary" id="btn-criar" disabled>
                     Criar conta
                 </button>

@@ -1,7 +1,15 @@
 #div-sub {
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
-    width: max-content;
+    width: max-content;*/
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  width: 100%;             
+  max-width: 400px;        
+  margin: 0 auto;          
+  gap: 16px;    
 }

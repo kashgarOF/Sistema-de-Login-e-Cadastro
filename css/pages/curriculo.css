@@ -15,15 +15,16 @@
   padding: 0 10px;
 }
 
-#campo-inicio, #campo-fim {
+#campo-inicio-1, #campo-inicio-2, #campo-fim-1, #campo-fim-2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-#campo-inicio label, #campo-fim label {
+.label-select label {
   width: 50px;
 }
+
 
 /*-------------------------EXPERIÊNCIA PROFISSIONAL--------------------------------*/
 .h3-prof {
@@ -138,9 +139,10 @@
   gap: 30px;
 }
 
-#radio-diversidade div {
+#radio-diversidade fieldset {
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 
 #concentimento-inf {

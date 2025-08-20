@@ -67,9 +67,9 @@
                         required>
                 </div>
                 <div id="select-div">
-                    <div id="campo-inicio" class="field">
-                        <label for="mes-inicio">Início*</label>
-                        <select id="mes-inicio" name="mes-inicio">
+                    <div id="campo-inicio-1" class="field label-select">
+                        <label for="mes-inicio-1 ano-inicio-1">Início*</label>
+                        <select id="mes-inicio-1" name="mes_inicio_1">
                             <option value="">Mês...</option>
                             <option value="01">Janeiro</option>
                             <option value="02">Fevereiro</option>
@@ -84,7 +84,7 @@
                             <option value="11">Novembro</option>
                             <option value="12">Dezembro</option>
                         </select>
-                        <select id="ano-inicio" name="ano-inicio">
+                        <select id="ano-inicio-1" name="ano_inicio_1">
                             <option value="ano">Ano</option>
                             <option value="2000">2000</option>
                             <option value="2001">2001</option>
@@ -118,9 +118,9 @@
                             <option value="2029">2029</option>
                         </select>
                     </div>
-                    <div id="campo-fim" class="field">
-                        <label for="mes-fim">Fim*</label>
-                        <select id="mes-fim" name="mes-fim">
+                    <div id="campo-fim-1" class="field label-select">
+                        <label for="mes-fim-1 ano-fim-1">Fim*</label>
+                        <select id="mes-fim-1" name="mes_fim_1">
                             <option value="">Mês...</option>
                             <option value="01">Janeiro</option>
                             <option value="02">Fevereiro</option>
@@ -136,7 +136,7 @@
                             <option value="12">Dezembro</option>
                         </select>
 
-                        <select id="ano-fim" name="ano-fim">
+                        <select id="ano-fim-1" name="ano_fim_1">
                             <option value="ano">Ano</option>
                             <option value="2000">2000</option>
                             <option value="2001">2001</option>
@@ -201,10 +201,10 @@
                     <input type="checkbox" id="emprego-atual">
                 </div>
 
-                <div id="prof-select">
-                    <div id="campo-inicio" class="field">
-                        <label for="mes-inicio">Início*</label>
-                        <select id="mes-inicio" name="mes-inicio">
+                <div id="prof-select" class="label-select">
+                    <div id="campo-inicio-2" class="field">
+                        <label for="mes-inicio-2 ano-inicio-2">Início*</label>
+                        <select id="mes-inicio-2" name="mes_inicio_2">
                             <option value="">Mês...</option>
                             <option value="01">Janeiro</option>
                             <option value="02">Fevereiro</option>
@@ -219,7 +219,7 @@
                             <option value="11">Novembro</option>
                             <option value="12">Dezembro</option>
                         </select>
-                        <select id="ano-inicio" name="ano-inicio">
+                        <select id="ano-inicio-2" name="ano_inicio_2">
                             <option value="ano">Ano</option>
                             <option value="2000">2000</option>
                             <option value="2001">2001</option>
@@ -253,9 +253,9 @@
                             <option value="2029">2029</option>
                         </select>
                     </div>
-                    <div id="campo-fim" class="field">
-                        <label for="mes-fim">Fim*</label>
-                        <select id="mes-fim" name="mes-fim">
+                    <div id="campo-fim-2" class="field label-select">
+                        <label for="mes-fim-2 ano-fim-2">Fim*</label>
+                        <select id="mes-fim-2" name="mes_fim_2">
                             <option value="">Mês...</option>
                             <option value="01">Janeiro</option>
                             <option value="02">Fevereiro</option>
@@ -271,7 +271,7 @@
                             <option value="12">Dezembro</option>
                         </select>
 
-                        <select id="ano-fim" name="ano-fim">
+                        <select id="ano-fim-2" name="ano_fim_2">
                             <option value="ano">Ano</option>
                             <option value="2000">2000</option>
                             <option value="2001">2001</option>
@@ -352,7 +352,7 @@
                 </div>
                 <div class="descricao-certificado">
                     <label for="txt-titulo-certificado">Descrição*</label>
-                    <textarea name="descricao-certificado" class="textarea-des"></textarea>
+                    <textarea id="txt-titulo-certificado" name="descricao-certificado" class="textarea-des"></textarea>
                 </div>
                 <div id="up-certificado" class="field">
                     <label for="certificado-arq">Envie seu certificado(.pdf/jpg/png)</label>
@@ -372,8 +372,9 @@
     <form action="#" id="bloco-dadosP" class="form" method="post" novalidate>
         <h2 class="h2">Dados pessoais</h2>
 
-        <h3 class="h3-prof genero-h3">Genero</h3>
-        <div id="genero" class="field radio">
+        
+        <fieldset id="genero" class="field radio">
+            <legend>Gênero:</legend>
             <label for=""><input type="radio" name="genero" value="masculino">
                 Masculino
             </label>
@@ -389,39 +390,41 @@
             <label for=""><input type="radio" name="genero" value="nao-respoder">
                 Prefiro não respoder
             </label>
-        </div>
-                <h3 class="h3-prof genero-h3">Deficiência</h3>
-        <div id="deficiencia" class="field radio">
+        </fieldset>
+                
+        <fieldset id="deficiencia" class="field radio">
+            <legend>Deficiência</legend>
             <label for=""><input type="radio" name="deficiencia" value="sim">
                 Sim
             </label>
             <label for=""><input type="radio" name="deficiencia" value="nao">
                 Não
             </label>
-        </div>
+        </fieldset>
         <div id="endereco" class="field">
             <h3 class="h3-prof genero-h3">Endereço</h3>
             <p>Lembre-se, este endereço será utilizado em todas as suas inscrições</p>
-            <div id="radio-endereco" class="radio field">
-                <p>Você mora no brasil?</p>
+            <fieldset id="radio-endereco" class="radio field">
+                <legend>Você mora no brasil?</legend>
                 <label for=""><input type="radio" name="radio_endereco" value="sim">
                     Sim
                 </label>
                 <label for=""><input type="radio" name="radio_endereco" value="nao">
                     Não
                 </label>
-            </div>
+            </fieldset>
             <div id="campo-input-endereco" class="field">
                 <div id="cep" class="field">
                     <label for="input-cep">CEP (código postal)</label>
-                    <input type="text" 
+                    <input type="text"
+                    inputmode="numeric" 
                     id="input-cep" 
                     name="cep" 
                     placeholder="00000-000" 
                     maxlength="9" 
                     required>
                 </div>
-                <div id="rua" class="field">
+                <div id="div-rua" class="field">
                     <label for="rua">Endereço</label>
                     <input type="text" 
                     id="rua" 
@@ -485,8 +488,8 @@
         <p class="paragrafo">O preenchimento desta secão é opicional.</p>
 
         <div id="radio-diversidade" class="field">
-            <div id="pronome" class="field radio">
-                <p>Qual o pronome adequado para você?</p>
+            <fieldset id="pronome" class="field radio">
+                <legend>Qual o pronome adequado para você?</legend>
                 <label for="ele">
                     <input type="radio" id="ele" name="ele" value="ele">
                     Ele/Dele
@@ -496,12 +499,12 @@
                     Ela/Dela
                 </label>
                 <label for="pronome-nao">
-                    <input type="radio" name="pronome_nao" id="pronome_nao" value="pronome-nao">
-                    Prefiro não respoder
+                    <input type="radio" name="pronome_nao" id="pronome-nao" value="pronome-nao">
+                    Prefiro não responder
                 </label>
-            </div>
-            <div id="indentidade-g" class="field radio">
-                <p>Qual sua indentidade de genero?</p>
+            </fieldset>
+            <fieldset id="indentidade-g" class="field radio">
+                <legend>Qual sua indentidade de genero?</legend>
                 <label for="ind-cis">
                     <input type="radio" id="ind-cis" name="ind_genero" value="cis">
                     Cisgênero
@@ -514,9 +517,9 @@
                     <input type="radio" name="ind_nao" id="ind-pf-não" value="ind-nao">
                     Prefiro não respoder
                 </label>
-            </div>
-            <div id="orientacao" class="field radio">
-                <p>Qual a sua orientação sexual?</p>
+            </fieldset>
+            <fieldset id="orientacao" class="field radio">
+                <legend>Qual a sua orientação sexual?</legend>
                 <label for="assexual">
                     <input type="radio" id="assexual" name="assexual" value="assexual">
                     Assexual
@@ -541,9 +544,9 @@
                     <input type="radio" id="orientacao-nao" name="orientacao-nao" value="orientacao-nao">
                     Prefiro não responder
                 </label>
-            </div>
-            <div id="cor-raca" class="field radio">
-                <p>Qual sua cor ou raça ?</p>
+            </fieldset>
+            <fieldset id="cor-raca" class="field radio">
+                <legend>Qual sua cor ou raça ?</legend>
                 <label for="amarela">
                     <input type="radio" id="amarela" name="amarela" value="amarela">
                     amarela
@@ -568,7 +571,7 @@
                     <input type="radio" id="cor-nao" name="cor-nao" value="cor-nao">
                     Prefiro não responder
                 </label>
-            </div>
+            </fieldset>
         </div>
         <div id="concetimento-inf" class="field">
             <h3 class="h3-prof genero-h3">Consentimento de compartilhamento de informações</h3>
