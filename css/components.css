@@ -128,7 +128,7 @@
   box-shadow: 0 0 0 3px #38bdf822;
 }
 
-.field label, select, textarea{
+.field label, select{
   cursor: pointer;
 }
 
