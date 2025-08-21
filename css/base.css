@@ -14,6 +14,11 @@
 
 }
 
+h1 { 
+  font-size: clamp(20px, 2.4vw, 26px);}
+h2 { 
+  font-size: clamp(18px, 2vw, 22px);}
+
 * {
   box-sizing: border-box;
 }
@@ -21,6 +26,7 @@
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -33,3 +39,20 @@ body {
   place-items: center;
   padding: 24px;
 }
+
+.card, .form, .grid, .grid--12, .grid--2 { min-width: 0; }
+
+img, video, canvas, iframe, table { max-width: 100%; height: auto; }
+
+p, .field, .field * { overflow-wrap: anywhere; word-break: break-word; }
+
+.card {
+  margin: clamp(16px, 2.5vw, 24px);
+  padding: clamp(16px, 2.5vw, 24px);
+}
+
+input:focus-visible, select:focus-visible, textarea:focus-visible, .btn:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px #38bdf822;
+  }
